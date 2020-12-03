@@ -1,0 +1,8 @@
+wget https://github.com/upx/upx/releases/download/v3.94/upx-3.94-i386_linux.tar.xz
+tar -xvf *.xz
+mv upx*/upx .
+
+./upx --ultra-brute /var/www/html/*
+./upx --ultra-brute /var/lib/tftpboot/*
+
+rm -rf upx*
